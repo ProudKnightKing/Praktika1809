@@ -5,9 +5,15 @@ namespace Praktika1809
 {
   class Program
   {
-    private const string V = "fffiohafiheihwfgeihwgehiwtehiwegj9wojhwge+79421447781dasdsadasda\n" +
-            "+732598051701570275sad\n" +
-            "kfjiogigji8(901)3654026\n";
+    private const string V = "89013654026g" +
+    "adf+79013654026agad" +
+    "fadf+7(901)3654026sadg" +
+    "faafda8(901)3654026agadg" +
+    "dda8-901-365-40-26gs" +
+    "ddsadasad8(901)3654026sgg" +
+    "oih[fgwjio +790136540263155" +
+    "ddddvsa8-901-365-40-26" +
+    "d79013654026";
 
     static void Main(string[] args)
     {
@@ -15,7 +21,7 @@ namespace Praktika1809
       string input = V;
       Console.WriteLine("Number");
       foreach (Match match in Regex.Matches(input, delimited))
-        Console.WriteLine("{1,10}", match.Groups[1], match.Groups[2].Value, match.Groups[3].Value);
+        Console.WriteLine("{0}", match.Groups[1].Value);
     }
   }
 }
